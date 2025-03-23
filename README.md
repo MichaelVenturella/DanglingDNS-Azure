@@ -40,3 +40,34 @@ Ensures thorough subdomain discovery followed by targeted CNAME analysis.
 
 ## Contributing
 - Feel free to submit issues or pull requests to improve the tool. Suggestions for additional enumeration methods or third-party domains are welcome!
+
+
+## azure_check.py Usage
+## Prerequisites
+
+1. **Install Dependencies**:
+   Install the required Python packages using `pip`:
+
+   ```bash
+   pip install azure-identity azure-mgmt-web azure-mgmt-resource azure-mgmt-subscription
+
+2. Log in to Azure: Authenticate with Azure using the az login command:
+   ```bash
+   az login
+## Example 1: Using JSON Output from dns_enum.py
+1. Run dns_enum.py: Start by running the dns_enum.py script to enumerate DNS records for a domain and output the results to a JSON file:
+   ```bash
+   python dns_enum.py example.com --output results.json
+2. The JSON output will look something like this:
+    ```bash
+   {
+    "app.example.com": {"cname": "myapp.azurewebsites.net", "dangling": true},
+    "mail.example.com": {"cname": "mailapp.azurewebsites.net", "dangling": false},
+    "staging.example.com": {"cname": "staging.azurewebsites.net", "dangling": true}
+}
+3. Run azure_check.py: Once you have the results.json file, run the azure_check.py script to check which CNAME records are confirmed as dangling:
+- python azure_check.py --input results.json --output confirmed_dangling.txt
+
+
+   
+   
