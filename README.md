@@ -26,7 +26,7 @@ Basic Syntax:
 - -workers: Maximum number of concurrent workers (default: 10).
 - -verbose: Enable debug logging for detailed output.
 - -wordlist <file>: Path to a file with subdomain prefixes (e.g., app, mail) to brute-force.
-- -subdomains <file>: Path to a file with pre-enumerated subdomains (e.g., app.example.com).[This is the recommended option]
+- -subdomains <file>: Path to a file with pre-enumerated subdomains (e.g., app.example.com).**This is the recommended option**
 - -skip-enumeration: Skip internal enumeration and use only the provided subdomain list.
 - -output <file>: Path to save results in JSON format.
 
