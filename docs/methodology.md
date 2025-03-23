@@ -21,7 +21,7 @@ Collect all DNS records for your organization’s domains.
 - Use the following script to query CNAME records:  
 
   ```bash
-  python scripts/dns_enum.py --domain example.com --output dns_records.txt
+  - python dns_enum.py example.com --subdomains subdomains.txt --skip-enumeration --output results.json
 
 
 
