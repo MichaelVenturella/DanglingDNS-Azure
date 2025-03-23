@@ -71,7 +71,9 @@ Ensures thorough subdomain discovery followed by targeted CNAME analysis.
     "mail.example.com": {"cname": "mailapp.azurewebsites.net", "dangling": false},
     "staging.example.com": {"cname": "staging.azurewebsites.net", "dangling": true}}
 3. Run azure_check.py: Once you have the results.json file, run the azure_check.py script to check which CNAME records are confirmed as dangling:
-- python azure_check.py --input results.json --output confirmed_dangling.txt
+```bash
+ python azure_check.py --input results.json --output confirmed_dangling.txt
+```
 
 
    
