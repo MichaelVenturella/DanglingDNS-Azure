@@ -59,7 +59,7 @@ Verify if the Azure resources still exist.
 - Run the following script:  
 
   ```bash
-  python scripts/azure_check.py --input dns_records.txt --output dangling.txt
+  python azure_check.py --input dns_records.txt --output dangling.txt
 
 
 ## Step 4: Verify Exploitability  
