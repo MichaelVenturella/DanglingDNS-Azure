@@ -31,10 +31,10 @@ domain: The target domain to scan (e.g., example.com) [Required].
 
 ## Workflow Recommendations
 For Comprehensive Scans
-Enumerate Subdomains: Use a tool like Sublist3r or Amass:
+Enumerate Subdomains: Use a tool like Sublist3r or Amass: 
 - sublist3r -d example.com -o subdomains.txt
 
-- Run Dangling DNS Enum script:
+Run Dangling DNS Enum script:
 - python ddangldns_enum.py example.com --subdomains subdomains.txt --skip-enumeration --output results.json
 Ensures thorough subdomain discovery followed by targeted CNAME analysis.
 
