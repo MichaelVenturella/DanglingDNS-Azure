@@ -19,7 +19,7 @@ Basic Syntax:
 - python dns_enum.py <domain> [options]
 
 ## Arguments
-domain: The target domain to scan (e.g., example.com) [Required].
+- -domain: The target domain to scan (e.g., example.com) [Required].
 - -timeout: DNS and HTTP timeout in seconds (default: 5).
 - -workers: Maximum number of concurrent workers (default: 10).
 - -verbose: Enable debug logging for detailed output.
