@@ -16,7 +16,7 @@ This repository provides a step-by-step guide and tools to identify and mitigate
 
 ## DNS_enum.py Usage
 Basic Syntax:
-- python dangldns_enum.py <domain> [options]
+- python dns_enum.py <domain> [options]
 
 ## Arguments
 domain: The target domain to scan (e.g., example.com) [Required].
@@ -35,7 +35,7 @@ Enumerate Subdomains: Use a tool like Sublist3r or Amass:
 - sublist3r -d example.com -o subdomains.txt
 
 Run Dangling DNS Enum script:
-- python ddangldns_enum.py example.com --subdomains subdomains.txt --skip-enumeration --output results.json
+- python dns_enum.py example.com --subdomains subdomains.txt --skip-enumeration --output results.json
 Ensures thorough subdomain discovery followed by targeted CNAME analysis.
 
 ## Contributing
