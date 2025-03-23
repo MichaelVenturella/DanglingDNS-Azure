@@ -15,32 +15,28 @@ This repository provides a step-by-step guide and tools to identify and mitigate
 
 
 ## DNS_enum.py Usage
-Basic Syntax
-bash
-python dangldns_enum.py <domain> [options]
+Basic Syntax:
+- python dangldns_enum.py <domain> [options]
 
 ## Arguments
 domain: The target domain to scan (e.g., example.com) [Required].
---timeout: DNS and HTTP timeout in seconds (default: 5).
---workers: Maximum number of concurrent workers (default: 10).
---verbose: Enable debug logging for detailed output.
---wordlist <file>: Path to a file with subdomain prefixes (e.g., app, mail) to brute-force.
---subdomains <file>: Path to a file with pre-enumerated subdomains (e.g., app.example.com).
---skip-enumeration: Skip internal enumeration and use only the provided subdomain list.
---output <file>: Path to save results in JSON format.
+- -timeout: DNS and HTTP timeout in seconds (default: 5).
+- -workers: Maximum number of concurrent workers (default: 10).
+- -verbose: Enable debug logging for detailed output.
+- -wordlist <file>: Path to a file with subdomain prefixes (e.g., app, mail) to brute-force.
+- -subdomains <file>: Path to a file with pre-enumerated subdomains (e.g., app.example.com).
+- -skip-enumeration: Skip internal enumeration and use only the provided subdomain list.
+- -output <file>: Path to save results in JSON format.
 
 
 ## Workflow Recommendations
 For Comprehensive Scans
 Enumerate Subdomains: Use a tool like Sublist3r or Amass:
-bash
-sublist3r -d example.com -o subdomains.txt
+- sublist3r -d example.com -o subdomains.txt
 
-Run Dangling DNS Enum script:
-bash
-python ddangldns_enum.py example.com --subdomains subdomains.txt --skip-enumeration --output results.json
+- Run Dangling DNS Enum script:
+- python ddangldns_enum.py example.com --subdomains subdomains.txt --skip-enumeration --output results.json
 Ensures thorough subdomain discovery followed by targeted CNAME analysis.
 
-
 ## Contributing
-Feel free to submit issues or pull requests to improve the tool. Suggestions for additional enumeration methods or third-party domains are welcome!
+- Feel free to submit issues or pull requests to improve the tool. Suggestions for additional enumeration methods or third-party domains are welcome!
