@@ -36,7 +36,7 @@ Filter records pointing to Azure services.
    - `*.azurewebsites.net` (App Services)  
    - `*.blob.core.windows.net` (Blob Storage)  
    - `*.trafficmanager.net` (Traffic Manager)  
-3. Refer to **[azure_services.md](azure_services.md)** for a full list.  
+3. Refer to **[[azure_services.md](azure_services.md)]([url](https://github.com/MichaelVenturella/DanglingDNS-Azure/blob/main/docs/Azure_services.md))** for a full list.  
 
 ### Output:  
 A shortlist of Azure-related CNAMEs.  
