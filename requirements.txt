@@ -1,0 +1,4 @@
+dnspython==2.4.2
+azure-identity==1.15.0
+azure-mgmt-web==7.2.0
+# Add more as needed (e.g., azure-mgmt-storage)
