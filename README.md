@@ -11,7 +11,7 @@ This repository provides a step-by-step guide and tools to identify and mitigate
 - Python 3.8+
 - Azure account with permissions to read resource status
 - Basic knowledge of DNS and Azure services
-You may need to install dnspython
+- You may need to install dnspython
 ```bash
 pip install dnspython
 ```
